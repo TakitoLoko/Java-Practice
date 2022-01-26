@@ -1,0 +1,9 @@
+.home-page{
+    background-color: rgb(48,48,48);
+    color: white;
+    font-size: 30px;
+}
+
+.home-page a{
+    color: turquoise;
+}
