@@ -1,9 +1,17 @@
 .home-page{
     background-color: rgb(48,48,48);
     color: white;
-    font-size: 30px;
 }
 
 .home-page a{
     color: turquoise;
+}
+
+.home-page img{
+    width: 40vh;
+}
+
+.row{
+    border-top: 10px solid darkorange;
+    padding-top: 2vh;
 }
