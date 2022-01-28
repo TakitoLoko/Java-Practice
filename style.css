@@ -25,10 +25,12 @@
 }
 
 .content p{
+    padding: 10px;
     justify-self: right;
     max-width: 35rem;
-    font-size: clamp(1rem, 3vw, 20rem);
+    font-size: clamp(2vh, 5vw, 6vh);
     border-radius: 2vh;
+    line-height: 1.5;
 }
 
 .content a{
