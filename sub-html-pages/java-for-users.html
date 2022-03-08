@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Java Practice</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body class="home-page">
   <div class="header">
     <H1>Resume Builder</H1>
     <img style="width: 150px;" src="/.metadata/.plugins/org.eclipse.jdt.ui/mrr.jpg">
-    <p> <br> <a class="to-java-btn" href="/index.html">Sign Out</a></p>
-    <br> <a class="to-java-btn" href="./index.html">Go back</a></p>
+    <p> <br> <a class="to-java-btn" href="../index.html">Sign Out</a></p>
+    <p><br> <a class="to-java-btn" href="./index.html">Go back</a></p>
   </div>
   <div class="content">
     <form id="myForm" class="form" style="background-color: rgba(95, 95, 95, 0.363);">
@@ -27,32 +27,32 @@
   </div>
 
   <script>
-    const username = document.getElementById("username")
-    const password = document.getElementById("password")
-    const submit = document.getElementById("submit")
+    const username = document.getElementById("username");
+    const password = document.getElementById("password");
+    const submit = document.getElementById("submit");
     let success = false
 
 
 
     submit.addEventListener("click", (e) => {
-      e.preventDefault()
+      e.preventDefault();
 
-      checkInputs()
+      checkInputs();
     })
 
     function checkInputs(){
-      const usernameValue = username.value.trim()
-      const passwordValue = password.value.trim()
+      const usernameValue = username.value.trim();
+      const passwordValue = password.value.trim();
       if (usernameValue === "toby44ct@gmail.com") {
         if (passwordValue === "imawesome") {
           location.href = './index.html';
         }
         else{
-          alert("User not found")
+          alert("User not found");
         }
       }
       else{
-      alert("User not found")
+      alert("User not found");
       }
     }
     
