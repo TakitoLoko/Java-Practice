@@ -24,6 +24,14 @@
     padding-top: 2%;
 }
 
+.content2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 5px solid darkorange;
+    font-size: 62.5%;
+    padding-top: 2%;
+}
+
 .content p{
     padding: 10px;
     justify-self: right;
