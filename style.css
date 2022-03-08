@@ -63,9 +63,15 @@ a{
 }
 
 #resume{
-    font-size: 3vh;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2.5vh;
     font-family: 'Times New Roman', Times, serif;
     color: black;
+    width: 794px;
+    height: 1123px;
+    border: 5px solid darkorange;
 }
 
 .name{
@@ -87,4 +93,26 @@ a{
 
 .bulletLists{
     text-indent: 6vh;
+}
+
+
+
+.generalPlaceInfoA{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-weight: bold;
+}
+
+.generalPlaceInfoB{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left{
+    text-indent: 3vh;
+    text-align: left;
+}
+
+.right{
+    text-indent: 8vh;
 }
