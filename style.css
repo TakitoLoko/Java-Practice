@@ -61,3 +61,30 @@
 a{
     text-decoration: none;
 }
+
+#resume{
+    font-size: 3vh;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+.name{
+    font-size: 6vh;
+    margin-top: 4vh;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contact{
+    text-align: center;
+}
+
+.resumeTitles{
+    line-height: 6vh;
+    text-align: center;
+    font-weight: bold;
+}
+
+.bulletLists{
+    text-indent: 6vh;
+}

@@ -4,58 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Java Practice</title>
+    <title>Resume Builder</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body class="home-page">
   <div class="header">
     <H1>Resume Builder</H1>
     <img style="width: 150px;" src="../metadata/plugins/userimages/mrr.jpg">
-    <p> <br> <a class="to-java-btn" href="../index.html">Sign Out</a></p>
     <p><br> <a class="to-java-btn" href="./index.html">Go back</a></p>
   </div>
   <div class="content">
-    <form id="myForm" class="form" style="background-color: rgba(95, 95, 95, 0.363);">
-      <p>Please enter your log in information:</p>
-      <input id="username" type="text" name="Username" placeholder="Email" required minlength="3" required>
+    <form action="./resume-final.html" method="GET" style="background-color: rgba(95, 95, 95, 0.363);">
+      <p>Please enter your information to create resume:</p>
       <br>
-      <input id="password" type="password" name="password" placeholder="Password" required minlength="6" required>
+      <h1>Personal Info:</h1>
       <br>
-      <button id="submit" type="submit">Submit</button>  
+      <h2>Full Name</h2>
+      <input type="text" name="name" placeholder="Full Name">
+      <br>
+      <br>
+      <h2>Address</h2>
+      <input type="text" name="address" placeholder="Address">
+      <br>
+      <br>
+      <h2>Number</h2>
+      <input type="text" name="number" placeholder="Number">
+      <br>
+      <br>
+      <h2>Email</h2>
+      <input type="text" name="email" placeholder="Email">
+      <br>
+      <br>
+      <h1>Skills:</h1>
+      <br>
+      <h2>Languages</h2>
+      <input type="text" name="languages" placeholder="Languages">
+      <br>
+      <br>
+      <h2>Software</h2>
+      <input type="text" name="software" placeholder="Software">
+      <br>
+      <br>
+      <h2>Hardware</h2>
+      <input type="text" name="hardware" placeholder="Hardware">
+      <br>
+      <br>
+      <h1>Work Experience:</h1>
+      <br>
+      <br>
+      <h2>Name of workplace, Location, Position</h2>
+      <input id="work" type="text" name="Work" placeholder="Work Experience">
+      <br>
+      <br>
+      <h2>Education: Name of school, Location, Career</h2>
+      <input id="education" type="text" name="Education" placeholder="Education">
+      <br>
+      <br>
+      <h2>Awards and Honors</h2>
+      <input id="awards" type="text" name="Awards" placeholder="Awards">
+      <br>
+      <br>
+      <input id="submit" type="submit"></input>  
   </form>
-    <img src="../images/loginIcon.png" alt="">
-  </div>
-
-  <script>
-    const username = document.getElementById("username");
-    const password = document.getElementById("password");
-    const submit = document.getElementById("submit");
-    let success = false
-
-
-
-    submit.addEventListener("click", (e) => {
-      e.preventDefault();
-
-      checkInputs();
-    })
-
-    function checkInputs(){
-      const usernameValue = username.value.trim();
-      const passwordValue = password.value.trim();
-      if (usernameValue === "toby44ct@gmail.com") {
-        if (passwordValue === "iamawesome") {
-          location.href = './index.html';
-        }
-        else{
-          alert("User not found");
-        }
-      }
-      else{
-      alert("User not found");
-      }
-    }
-    
-  </script>
+  <img src="../images/pexels-karolina-grabowska-4207707.jpg" alt="">
+</div>
 </body>
 </html>
